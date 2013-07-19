@@ -1,5 +1,7 @@
 <?php
 include ('system/conf.php');
+include 'libs/changelog.class.php';
+include 'libs/auth.class.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,8 +16,20 @@ include ('system/conf.php');
   <div class="navbar-inner">
     <a class="brand" href="#">Catk's</a>
     <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="/changelog/changelog">Home</a></li>
+	  <li><a href="/changelog/login">Login</a></li>
     </ul>
+	              <div class="pull-right">
+                <ul class="nav pull-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, <?php echo $_SESSION['login']?> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/changelog/add-more"><i class="icon-cog"></i> Update Changelog</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/auth/logout"><i class="icon-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
   </div>
 </div>
     <div class="page-header">
