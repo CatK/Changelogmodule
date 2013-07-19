@@ -1,10 +1,10 @@
 <?php
 
 /** USER ID **/
-$host = "mysql.exano.net";
-$user = "reckless_a1d4s8";
-$pass = "a1201ce23d5";
-$db = "reckless_dbreck4545117454";
+$host = "HOST_DB";
+$user = "HOST_USER";
+$pass = "HOST_PASS";
+$db = "HOST_DB";
 
 
 /** CONNECT PARAMS **/
