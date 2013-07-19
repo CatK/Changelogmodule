@@ -1,6 +1,6 @@
 <?php
 //CHANGELOG PROJECT - PARSER
-//@NEKKATHECAT
+//@Poisskai
 if (isset($_GET['cat'])) {
     if (!isset($_GET['action'])) {
         if (preg_match('#^[a-zA-Z0-9]+$#', $_GET['cat'])) {
